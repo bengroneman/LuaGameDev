@@ -79,7 +79,7 @@ function love.run()
 end
 
 function recursiveEnumerate(folder, file_list)
-	local itmes = love.filesystem.getDirectoryItems(folder)
+	local items = love.filesystem.getDirectoryItems(folder)
 	for _, item in ipairs(items) do
 		local file = folder .. '/' .. item
 		if love.filesystem.isFile(file) then
